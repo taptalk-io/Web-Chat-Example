@@ -1,0 +1,158 @@
+.area-code-wrapper {
+    position: relative;
+    min-width: 142px;
+    display: inline-block;
+    margin-right: 8px;
+    height: 48px;
+
+    .dropdown-country-code-picker {
+        position: relative;
+        background: #ffffff !important;
+
+        .value-country-code-wrapper {
+            width: 100%;
+            text-align: left;
+            outline: none !important;
+            border-radius: 8px;
+            border: solid 1px #dcdcdc !important;
+            background: #ffffff !important;
+            height: 50px;
+            color: #191919 !important;
+            box-shadow: none !important;
+            position: relative;
+            padding: 6px 26px 6px 12px;
+
+            .area-code-placeholder {
+                width: 35px;
+                height: 24px;
+                border: solid 1px rgba(25, 25, 25, 0.1);
+                border-radius: 2px;
+                text-align: center;
+        
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    top: 15px;
+                    right: 35px;
+                }
+            }
+            
+            .country-flag {
+                width: 32px;
+                height: 24px;
+                display: inline-block;
+                position: relative;
+                margin-right: 6px;
+                top: -1px;
+            }
+
+            svg {
+                transition: ease-in-out .1s;
+                position: absolute;
+                top: 17px;
+                right: 8px;
+
+                &.chevron-up {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .dropdown-menu {
+            padding: 0;
+            border-radius: 8px;
+
+            .country-search-wrapper {
+                position: relative;
+                width: 100%;
+
+                input {
+                    border: none !important;
+                    height: 37px;
+                    padding: 12px 12px 12px 36px !important;
+                    font-size: 14px;
+                    letter-spacing: -0.2px;
+                    color: #191919;
+                    border-bottom: solid 1px #dcdcdc !important;
+                    border-radius: 8px 8px 0 0 !important;
+                }
+
+                svg {
+                    position: relative;
+                    color: #ff7d00;
+                    position: absolute;
+                    left: 12px;
+                    top: 11px;
+                }
+            }
+
+            .country-list-select {
+                width: 320px;
+                // max-height: 170px;
+                min-height: 37px;
+                max-height: 222px;
+                overflow: auto;
+
+                .custom-phone-code-picker {
+                    padding: 0 12px;
+                    height: 37px;
+                    line-height: 37px;
+                    border-bottom: solid 1px #dcdcdc;
+                    cursor: pointer;   
+                    color: #191919;
+                    font-size: 14px; 
+
+                    &:nth-last-child(1) {
+                        border-bottom: none;
+                    }
+        
+                    img {
+                        width: 21px;
+                        height: 16px;
+                        display: inline-block;
+                        margin-right: 6px;
+                        position: relative;
+                        top: -2px;
+                    }
+
+                    svg {
+                        margin-right: 6px;
+                        position: relative;
+                        color: #ff7d00;
+                        font-size: 18px;
+                        top: -1px;
+                    }
+        
+                    div {
+                        display: inline-block;
+                        font-size: 14px;
+                        letter-spacing: -0.2px;
+                        line-height: 1;
+                        position: relative;
+                        vertical-align: top;
+                        top: 11px;
+        
+                        .country-name {
+                            top: 0 !important;
+                        }
+                    }
+
+                    &:hover {
+                        color: #ff7d00;
+                    }
+
+                    &.active-code-number {
+                        color: #ff7d00;
+                    }
+                }
+
+                &.no-option {
+                    text-align: center;
+                    border-top: solid 1px #dcdcdc;
+                    color: grey;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}

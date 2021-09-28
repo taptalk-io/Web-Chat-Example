@@ -1,0 +1,135 @@
+.chat-room-reply-message-wrapper {
+    .chat-room-reply-message-wrapper-inner {
+        // box-shadow: 0 2px 20px 0 rgba(25, 25, 25, 0.18);
+        padding: 9px 8px 9px 64px;
+        width: 100%;
+        position: absolute;
+        height: 68px;
+        bottom: 68px;
+        left: 0;
+        background: #ffffff;
+
+        .cancel-reply-button {
+            font-size: 20px;
+            color: rgba(25, 25, 25, 0.4);
+            transition: ease-in-out .1s;
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            transform: translate(0, -50%);
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(25, 25, 25, 0.8);
+            }
+        }
+
+        .reply-content-outer-wrapper {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            width: 100%;
+            position: relative;
+
+            &.with-border {
+                padding-left: 4px;
+
+                &::before {
+                    content: "";
+                    width: 4px;
+                    height: 100%;
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #ff7e00;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+            }
+
+            .reply-file-media-wrapper {
+                border-radius: 4px;
+                width: 48px;
+                height: 48px;
+                display: inline-block;
+                margin: 0 8px 0 0;
+                vertical-align: top;
+                position: relative;
+                top: 1px;
+
+                .reply-message-image {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+    
+                .reply-message-video {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: 100%;
+                    max-height: 100%;
+                }  
+    
+                .reply-message-file {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    background: #ff7e00;
+
+                    svg {
+                        color: #ffffff;
+                        font-size: 22px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+            .reply-name-text-wrapper {
+                padding: 8px 0 8px 8px;
+
+                &.with-image-or-video-or-file {
+                    width: calc(100% - 64px);
+                    display: inline-block;
+                }
+
+                p {
+                    margin: 0;
+
+                    &.reply-name {
+                        color: #191919;
+                        font-size: 12px;
+                        letter-spacing: -0.4px;
+                        line-height: 18px;
+                        max-width: 100%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    &.reply-text {
+                        color: rgba(25,25,25,0.8);
+                        font-size: 12px;
+                        letter-spacing: -0.2px;
+                        line-height: 16px;
+                        max-width: 100%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+}

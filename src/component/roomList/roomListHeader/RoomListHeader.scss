@@ -1,0 +1,87 @@
+.top-room-list-wrapper {
+    height: 53px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
+    background: #ffffff;
+
+    .room-list-top-avatar-wrapper {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        margin-right: 12px;
+        vertical-align: top;
+        position: relative;
+        top: 4px;
+        
+        .my-avatar {
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+            width: 32px;
+            height: 32px;
+        }
+
+        .avatar-abbreviation {
+            border-radius: 50%;
+            background: #aff2c0;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            width: 100%;
+            height: 32px;
+            font-size: 12px;
+            letter-spacing: -0.4px;
+        }
+    }
+
+    .room-list-top-new-icon-wrapper {
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 1px;
+        cursor: pointer;
+        transition: ease-in-out .1s;
+        padding: 3px;
+        width: 40px;
+        height: 40px;
+        vertical-align: top;
+
+        &:hover {
+            background: #FFE7D0;
+        }
+
+        .room-list-top-new-icon {
+            width: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .search-box-wrapper {
+        margin-right: 11px;
+        width: calc(100% - 95px);
+
+        input {
+            border-radius: 8px;
+            font-size: 14px;
+            padding: 9px 30px 8px;
+            transition: ease-in-out .1s;
+        }
+
+        .search-icon {
+            width: 16px;
+        }
+    }
+}

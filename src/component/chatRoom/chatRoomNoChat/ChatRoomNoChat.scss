@@ -1,0 +1,25 @@
+.no-chat-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 250px;
+
+    .no-chat-content {
+        display: inline-block;
+        padding: 16px;
+        background: #dcebff;
+        border-radius: 8px;    
+        color: #044b84;
+        font-size: 16px;
+        letter-spacing: -0.5px;
+        line-height: 24px;
+        max-width: 90%;
+        // height: 48px;
+
+        svg {
+            font-size: 18px;
+            margin-right: 6px;
+            position: relative;
+            top: 4px;
+        }
+    }
+}

@@ -1,0 +1,341 @@
+.register-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #F3F3F3;
+
+    .orange-border {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 264px;
+        width: 100%;
+        background: linear-gradient(-225deg, rgb(255, 171, 58) 0%, rgb(255, 125, 0) 100%);
+    }
+
+    .register-main-content {
+        padding-top: 57px;
+        text-align: center;
+
+        .register-card {
+            width: 640px;
+            height: calc(100% - 120px);
+            overflow: auto;
+            position: fixed;
+            top: 120px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: inline-block;
+            border-radius: 8px;
+            background: #ffffff;
+            padding: 64px 64px 82px;
+            // margin-top: 38px;
+
+            b {
+                font-size: 40px;
+                letter-spacing: -0.6px;
+                color: #191919;
+            }
+
+            p {
+                line-height: 24px;
+                margin: 4px 0 0;
+                font-size: 16px;
+                letter-spacing: -0.3px;
+            }
+
+            .phone-wrapper {
+                margin: 8px 0 24px;
+                text-align: left;
+
+                label {
+                    margin-top: 24px;
+                    display: inline-block !important;
+
+                    b {
+                        font-size: 14px;
+                        letter-spacing: -0.4px;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    border: solid 1px #dcdcdc;
+                    border-radius: 8px;
+                    padding: 16px;
+                    margin-top: 7px;
+                    font-size: 16px;
+
+                    &:focus {
+                        border: solid 1px #ff7d00;
+                    }
+                }
+
+                .code-phone {
+                    width: 90px;
+                    display: inline-block;
+                    margin-right: 16px;
+                }
+
+                .phone-number {
+                    width: 100%;
+                    display: inline-block;
+                    position: relative;
+
+                    .phone-country {
+                        position: absolute;
+                        left: 14px;
+                        bottom: 15px;
+                        line-height: 1;
+                        cursor: pointer;
+
+                        img {
+                            width: 32px;
+                            border-radius: 2px;
+                        }
+                        
+                        svg {
+                            position: absolute;
+                            top: 50%;
+                            margin-left: 4px;
+                            transform: translate(0, -50%);
+                        }
+                    }
+
+                    input {
+                        &.input-phone {
+                            padding-left: 76px;
+                        }
+                    }
+
+                    .lds-ring {
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        right: 14px;
+                        bottom: 17px;
+
+                        div {
+                            width: 20px;
+                            height: 20px;
+                            border-color: #ff7d00 transparent transparent transparent;
+                        }
+                    }
+                }
+
+                [disabled] {
+                    cursor: not-allowed;
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 15px 0;
+                font-size: 16px;
+                letter-spacing: -0.5px;
+                position: relative;
+                min-height: 55px;
+
+                .lds-ring {
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    position: absolute;
+                }
+            }
+
+            .username-requirement {
+                margin: 8px 0;
+                padding: 0;
+
+                li {
+                    font-size: 14px;
+                    letter-spacing: -0.2px;
+                    color:rgba(25, 25, 25, 0.8);
+                    list-style: none;
+                    padding: 0 0 4px 0;
+                }
+            }
+        }
+
+        .dont-have-account {
+            margin-top: 16px !important;
+
+            b {
+                font-size: 16px;
+                letter-spacing: -.2px;
+                color: #191919;
+                text-align: center;
+                color: rgba(25,25,25,.5);
+            }
+
+            a {
+                color: #ff7d00;
+
+                &:hover {
+                    color: #E87200;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 768px) {
+       .register-card {
+            padding: 24px 24px 82px !important;
+            width: calc(100% - 24px) !important;
+            // height: calc(100% );
+            position: fixed;
+            top: 88px;
+            left: 12px;
+            height: calc(100% - 88px);
+
+            .title-register {
+                font-size: 24px !important;
+                letter-spacing: -0.6px !important;
+            }
+        } 
+    }
+}
+
+.otp-modal {
+    .modal-content {
+        width: 435px;
+        display: inline-block;
+        border-radius: 8px;
+        box-shadow: 0px 2px 20px 0px rgba(25, 25, 25, 0.18);
+        background: #ffffff;
+        text-align: center;
+        padding: 14px 24px 34px;
+
+        .otp-modal-header {
+            text-align: center;
+            position: relative;
+
+            b {
+                color: #191919;
+                font-size: 20px;
+                letter-spacing: -0.6px;
+            }
+
+            svg {
+                font-size: 40px;
+                position: absolute;
+                right: -11px;
+                top: -6px;
+                color: #9b9b9b;
+                cursor: pointer;
+                transition: ease-in-out .1s;
+
+                &:hover {
+                    color: #ff7d00;
+                }
+            }
+        }
+
+        .icon-chatting-wrapper {
+            height: 96px;
+            width: 96px;
+            border-radius: 50%;
+            display: inline-block;
+            background: #f4f4f4;
+            text-align: center;
+            position: relative;
+            margin: 32px 0 10px;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &.otp-whatsapp {
+                background: #ECFFE9;
+            }
+        }
+
+        .otp-info {
+            font-size: 16px;
+            letter-spacing: -0.3px;
+            color: rgba(25, 25, 25, 0.8);
+            margin: 0;
+        }
+
+        .re-type-phone {
+            font-size: 16px;
+            letter-spacing: -0.5px;
+            color: #ff7d00;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--main-darker-orange);
+            }
+
+            img {
+                position: relative;
+                top: 0px;
+                margin-right: 7px;
+            }
+        }
+
+        input {
+            width: 100%;
+            border-radius: 8px;
+            padding: 15px 10px;
+            margin-top: 12px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            font-size: 16px;
+            padding: 15px 0;
+        }
+
+        .not-receiving-otp {
+            font-size: 14px;
+            letter-spacing: -0.2px;
+            color: rgba(25, 25, 25, 0.6);
+            margin-top: 32px;
+        }
+
+        .resend-otp {
+            color: #ff7d00;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--main-darker-orange);
+            }
+
+            img {
+                vertical-align: top;
+                position: relative;
+                top: -2px;
+                margin-right: 2px;
+            }
+        }
+
+        .wait-otp {
+            color: rgba(25, 25, 25, 0.2);
+            font-size: 16px;
+            letter-spacing: -0.5px;
+            height: 24px;
+        }
+
+        .modal-body {
+            padding: 0;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 768px) {
+        .modal-content {
+            height: 100%;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+}

@@ -1,0 +1,391 @@
+.my-account-modal {
+    .modal-header {
+        background: #f3f3f3;
+        position: relative;
+        text-align: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 15px;
+        height: 300px;
+        overflow: hidden;
+
+        .close-my-account {
+            font-size: 30px;
+            position: absolute;
+            // top: 189px;
+            top: 214px;
+            // right: 30px;
+            right: 5%;
+            cursor: pointer;
+            transition: ease-in-out .2s;
+
+            &:hover {
+                color: #ff7d00;
+            }
+        }
+
+        .modal-title {
+            margin: 0;
+        }
+
+        .my-account-title {
+            font-size: 20px;
+            letter-spacing: -0.6px;
+            color: #191919;
+        }
+
+        .my-account-avatar-wrapper {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            padding: 50px 0 10px;
+        }
+
+        .my-account-avatar {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background: #aff2c0;
+            color: white;
+            display: inline-block;
+            line-height: 80px;
+            font-size: 20px;
+            // margin: 50px 0 18px;
+
+            img {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .upload-avatar-progress-wrapper {
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            left: 50%;
+            transform: translate(-50%, 0);
+            position: absolute;
+            border-radius: 50%;
+            padding: 3px;
+            background: #19191966;
+
+            .upload-progress-border {
+                border: solid 6px #ffffff;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+
+                svg {
+                    font-size: 35px;
+                    color: #ffffff;
+                    position: relative;
+                    top: 14px;
+                    cursor: pointer;
+                    transition: ease-in-out .1s;
+
+                    &:hover {
+                        color: #efefef;
+                    }
+                }
+            }
+        }
+
+        .avatar-uploading-wrapper {
+            color: rgba(25, 25, 25, 0.4);
+            letter-spacing: -0.5px;
+            font-size: 16px;
+
+            .lds-ring {
+                position: relative;
+                top: 4px;
+                margin-right: 10px;
+
+                div {
+                    border-color: #9b9b9b transparent transparent transparent;
+                }
+            }
+        }
+
+        .my-profile-optional {
+            color: rgba(25, 25, 25, 0.4);
+            font-size: 14px;
+            letter-spacing: -0.2px;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .change-avatar-button {
+            cursor: pointer;
+            color: #ff7d00;
+            font-size: 16px;
+            letter-spacing: -0.5px;
+            display: block;
+            
+            &:hover {
+                color: var(--main-darker-orange);
+            }
+
+            img {
+                position: relative;
+                top: 5px;
+                margin-right: 5px;
+            }
+        }
+
+        .circle-top-background {
+            // width: 465px;
+            height: 465px;
+            // left: -15px;
+            // top: -175px;
+            width: 105%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            top: -195px;
+            border:solid 1px #dcdcdc;
+            overflow: hidden;
+            display: inline-block;
+            background: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            // padding-top: 190px;
+            padding-top: 215px;
+
+            input {
+                display: none;
+            }
+        }
+    }
+
+    .modal-content {
+        width: 435px;
+        border-radius: 8px;
+        max-height: calc(100vh - 40px);
+        overflow: auto;
+        height: 100%;
+    }
+
+    .modal-body {
+        background: #f3f3f3;
+        padding: 10px 24px 0;
+        
+        .input-my-account {
+            padding-bottom: 27px;
+
+            input {
+                padding: 16px;
+                line-height: 1;
+                width: 100%;
+                border-radius: 8px;
+                margin: 8px 0 0;
+                font-size: 16px;
+                letter-spacing: -0.3px;
+            }
+
+            .username-rule {
+                display: block;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            .phone-input-wrapper {
+                &:nth-child(1) {
+                    width: 90px;
+                    display: inline-block;
+                    margin-right: 17px;
+                    vertical-align: top;
+                }
+
+                &:nth-child(2) {
+                    width: calc(100% - 107px);
+                    display: inline-block;
+                    vertical-align: top;
+                }
+
+                label {
+                    // color: rgba(25, 25, 25, 0.2);
+                    font-size: 14px;
+                    letter-spacing: -0.4px;
+                    line-height: 21px;
+                }
+
+                .phone-input {
+                    color: #191919;
+                    font-size: 16px;
+                    letter-spacing: -0.3px;
+                    line-height: 1;
+                    padding: 15px 16px 16px;
+                    background: rgba(25, 25, 25, 0.1);
+                    border: none;
+                }
+            }
+
+            input {
+                &[disabled] {
+                    background: rgba(25, 25, 25, 0.1);
+                    border: none;
+                }
+            }
+        }
+
+        .my-accout-action-button {
+            color: rgb(255, 125, 0);
+            font-size: 16px;
+            letter-spacing: -0.5px;
+            line-height: 24px;
+            padding: 16px;
+            border-radius: 8px;
+            background: #ffffff;
+            margin-top: 8px;
+            position: relative;
+            cursor: pointer;
+            transition: ease-in-out .1s;
+
+            &:hover {
+                background: #FFE7D0;
+            }
+
+            svg {
+                position: absolute;
+                right: 3px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+            }
+
+            &.logout {
+                color: #ff3f57;
+
+                .lds-ring {
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+
+                    div {
+                        border-color: #ff3f57 transparent transparent transparent;
+                    }
+                }
+
+                svg {
+                    right: 6px;
+                }
+
+                img {
+                    position: absolute;
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    .modal-footer {
+        background: #ffffff;
+        border-top: solid 1px #dcdcdc;
+        padding: 10px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        button {
+            width: 100%;
+            padding: 15px 0;
+            font-size: 16px;
+            letter-spacing: -0.3px;
+            line-height: 1;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 1024px) {
+        .modal-content {
+            width: 100%;
+            height: 100%;
+            max-height: unset;
+            border-radius: 0;
+
+            .circle-top-background {
+                // width: 120vw;
+                // left: 50%;
+                // transform: translate(-50%, 0);
+                // top: -205px;
+            }
+        }
+    }
+}
+
+.modal-upload-avatar {
+    .modal-content {
+        padding: 32px;
+        border-radius: 8px;
+    }
+
+    .modal-body {
+        b {
+            color: #191919;
+            font-size: 20px;
+            letter-spacing: -0.6px;
+        }
+
+        p {
+            color: rgba(25, 25, 25, 0.8);
+            font-size: 16px;
+            letter-spacing: -0.3px;
+            margin: 8px 0 40px;
+        }
+
+        .modal-upload-avatar-button-wrapper {
+            width: 100%;
+            text-align: right;
+
+            .button-cancel {
+                font-size: 16px;
+                letter-spacing: -0.5px;
+                cursor: pointer;
+                border: none;
+                width: 85px;
+                padding: 8px 0 10px;
+                background: none;
+                vertical-align: top;
+
+                b {
+                    color: rgba(25, 25, 25, 0.6);
+                    font-size: 16px;
+                }
+            }
+            
+            .button-retry {
+                background: rgb(25, 199, 0);
+                border-radius: 8px;
+                font-size: 16px;
+                letter-spacing: -0.5px;
+                border: none;
+                width: 85px;
+                margin-left: 8px;
+                padding: 8px 0 10px;
+                vertical-align: top;
+
+                b {
+                    color: rgb(255, 255, 255);
+                    font-size: 16px;
+                }
+            }
+
+            .button-cancel-red {
+                background: #ff3f57;
+                border-radius: 8px;
+                font-size: 16px;
+                letter-spacing: -0.5px;
+                border: none;
+                width: 125px;
+                margin-left: 8px;
+                padding: 8px 0 10px;
+                vertical-align: top;
+
+                b {
+                    color: rgb(255, 255, 255);
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

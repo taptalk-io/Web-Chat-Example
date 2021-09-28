@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+    <title>13D52E79-B400-4E12-BDD6-5B96B9B9434A@1.00x</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Min.-1024px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="15.1-Chat-Bubble-Actions---Reply---Display-composer-sheet" transform="translate(-1228.000000, -640.000000)">
+            <g id="chat-room" transform="translate(435.000000, 0.000000)">
+                <g id="composer" transform="translate(0.000000, 624.000000)">
+                    <g id="button-search" transform="translate(789.000000, 12.000000)">
+                        <g id="icon-/-basic-/-search" transform="translate(4.000000, 4.000000)">
+                            <g id="icon-/-custom-/-send">
+                                <rect id="base" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                                <path d="M18.342188,10.962826 C19.2192707,11.3903682 19.2192707,12.6098053 18.342188,13.0370575 L6.29182251,18.9069935 C5.6982744,19.1962729 5,18.7756874 5,18.1293016 L5.51351581,13.8419962 C5.56141618,13.4419906 5.88511561,13.1263341 6.29569024,13.0790871 L12.6509691,12.4324115 C13.1844186,12.3782079 13.1844186,11.6216757 12.6509691,11.567472 L6.29569024,10.9207965 C5.88511561,10.8738393 5.56141618,10.5581828 5.51351581,10.1578874 L5,5.87058191 C5,5.22419619 5.6982744,4.80390054 6.29182251,5.09289003 L18.342188,10.962826 Z" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,91 @@
+.modal-phone-code {
+    .modal-body {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background: transparent;
+        padding: 0;
+    }
+
+    .modal-content {
+        width: 435px;
+        height: calc(100% - 40px);
+        border-radius: 8px;
+        overflow: hidden;
+
+        .modal-phone-code-header {
+            // height: 53px;
+            width: 100%;
+            text-align: center;
+            padding: 16px 0 17px;
+            position: relative;
+            font-size: 20px;
+            letter-spacing: -0.6px;
+            line-height: 1;
+
+            svg {
+                color: #ff7d00;
+                cursor: pointer;
+                font-size: 32px;
+                position: absolute;
+                right: 22px;
+                top: 11px;
+
+                &:hover {
+                    color: #E87200;
+                }
+            }
+        }
+
+        .modal-phone-search {
+            padding: 8px 16px;
+        }
+
+        .modal-phone-code-body {
+            overflow: auto;
+            width: 100%;
+            max-height: calc(100% - 106px);
+
+            .alphabet-wrapper {
+                padding: 5px 16px;
+                font-size: 12px;
+                letter-spacing: 2.5px;
+                color: rgba(155, 155, 155, 1);
+                background: #dedede;
+            }
+
+            .country-wrapper {
+                height: 44px;
+                padding: 13px 16px 10px 60px;
+                line-height: 1;
+                position: relative;
+                font-size: 16px;
+                letter-spacing: -0.3px;
+                cursor: pointer;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
+
+                img {
+                    position: absolute;
+                    top: 12px;
+                    left: 16px;
+                    width: 28px;
+                    border-radius: 2px;
+                }
+
+                &:hover {
+                    // background: #FFECEE;
+                    background: #ff7d00;
+                }
+            }
+
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

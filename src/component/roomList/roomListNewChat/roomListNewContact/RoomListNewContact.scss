@@ -1,0 +1,125 @@
+.new-contact-content {
+    transition: ease-in-out .3s;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    // right:-455px;
+    right: -100%;
+    
+    &.active-new-chat-view {
+        right: 0;
+    }
+}
+
+.goback-new-chat {
+    font-size: 25px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+
+    &:hover {
+        color: #ff7d00;
+    }
+}
+
+.new-contact-wrapper {
+    height: calc(100vh - 161px);
+    background: #f3f3f3;
+
+    .new-contact-info {
+        text-align: center;
+        padding-top: 92px;
+        border-top: solid 1px #dcdcdc;
+
+        b {
+            font-size: 20px;
+            letter-spacing: -0.6px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 8px 0 0;
+            color: rgba(25, 25, 25, 0.8);
+        }
+    }
+
+    .loading-search-contact {
+        text-align: center;
+        padding-top: 25px;
+        
+        .lds-ring {
+            div {
+                border-color: #ff7d00 transparent transparent transparent;
+            }
+        }
+    }
+}
+
+.new-contact-user-wrapper {
+    padding: 24px;
+
+    .new-contact-user-card {
+        text-align: center;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 2px 20px 0px rgba(25, 25, 25, 0.05);
+        background: #ffffff;
+        padding: 40px 20px 20px;
+
+        .new-contact-user-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: inline-block;
+            color: #ffffff;
+            background: #aff2c0;
+            line-height: 64px;
+            text-align: center;
+
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:nth-child(2) {
+                color: rgb(25, 25, 25);
+                font-size: 20px;
+                letter-spacing: -0.6px;
+                margin: 16px 0 5px;
+            }
+
+            &:nth-child(3) {
+                color: rgba(25, 25, 25, 0.8);
+                font-size: 16px;
+                letter-spacing: -0.3px;
+                margin: 0 0 24px;
+            }
+        }
+
+        button {
+            width: 100%;
+            padding: 13px 0 16px;
+            font-size: 20px;
+            letter-spacing: -0.6px;
+            height: 58px;
+
+            svg {
+                margin-right: 7px;
+                position: relative;
+                font-size: 24px;
+                top: 3px;
+                vertical-align: top;
+            }
+        }
+    }
+}

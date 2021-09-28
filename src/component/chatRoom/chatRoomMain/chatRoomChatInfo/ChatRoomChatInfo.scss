@@ -1,0 +1,20 @@
+.chat-room-info-wrapper {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 16px;
+
+    .chat-room-info-content {
+        max-width: calc(100% - 40px);
+        padding: 4px 16px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 20px 0px rgba(25, 25, 25, 0.05);
+        display: inline-block;
+        background: #ffffff;
+        color: rgba(25, 25, 25, 0.4);
+        font-size: 12px;
+        letter-spacing: -0.4px;
+        line-height: 18px;
+        text-align: center;
+    }
+}

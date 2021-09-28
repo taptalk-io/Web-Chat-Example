@@ -1,0 +1,10 @@
+.circle-loading-wrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+
+    .lds-ring div {
+        border-color: #ff7e00 transparent transparent transparent;
+    }
+}

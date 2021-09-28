@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>icon / basic / check-mark / double</title>
+    <desc>Created with Sketch.</desc>
+    <g id="320-720px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="12.2-Group-Chat---Chat-room---Kicked" transform="translate(-278.000000, -378.000000)">
+            <g id="chat-bubble-/-send-link-/-with-preview-copy" transform="translate(64.000000, 269.000000)">
+                <g id="Group---chat-bubble">
+                    <g id="Group---time-stamp+status" transform="translate(185.000000, 109.000000)">
+                        <g id="icon-/-basic-/-check-mark-/-double" transform="translate(29.000000, 0.000000)">
+                            <g id="icon/basic/check-mark/double">
+                                <g>
+                                    <rect id="Base" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+                                    <path d="M13.7461369,4 L14.6666667,4.93337262 L8.36394031,11.3333333 L7.11077804,10.063 L8.03077804,9.128 L8.36394031,9.4665881 L13.7461369,4 Z M9.74613694,4 L10.6666667,4.93337262 L4.36394031,11.3333333 L1.31577804,8.23334315 L2.23630777,7.29997054 L4.36394031,9.4665881 L9.74613694,4 Z" id="icon" fill="#19C700" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

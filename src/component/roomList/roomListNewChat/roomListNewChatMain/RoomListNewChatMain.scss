@@ -1,0 +1,293 @@
+.new-chat-header {
+    padding: 15px 12px 12px;
+    text-align: center;
+
+    .close-new-chat {
+        font-size: 30px;
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        cursor: pointer;
+        transition: ease-in-out .2s;
+
+        &:hover {
+            color: #ff7d00;
+        }
+    }
+
+    .modal-title {
+        margin: 0;
+    }
+
+    .new-chat-title {
+        font-size: 20px;
+        letter-spacing: -0.6px;
+        color: #191919;
+    }
+
+    .new-chat-avatar {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin: 50px 0 18px;
+    }
+
+    .search-box-wrapper {
+        width: 100%;
+        margin-top: 28px;
+    }
+}
+
+.new-chat-content {
+    transition: ease-in-out .3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    // left: -455px;
+    left: -100%;
+    
+    &.active-new-chat-view {
+        left: 0;
+    }
+
+    .contact-by-alphabet-wrapper {
+        max-height: calc(100% - 94px);
+        height: calc(100% - 94px);
+        overflow:auto;
+
+        .main-contact-loading-wrapper {
+            text-align: center;
+            padding-top: 25px;
+
+            .lds-ring {
+                div {
+                    border-color: #ff7d00 transparent transparent transparent;
+                }
+            }
+        }
+    }
+
+    .contact-name {
+        p {
+            max-width: calc(100% - 16px) !important;
+        }
+    }
+}
+
+.add-contact-wrapper {
+    border-bottom: solid 1px #dcdcdc;
+    padding: 13px 24px 13px 58px;
+    color: #ff7d00;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+
+    &.new-group {
+        background: #ffffff;
+    }
+
+    svg {
+        right: 14px;
+        top: 50%;
+        transform: translate(0, -50%);
+        position: absolute;
+        font-size: 22px;
+        transition: ease-in-out .3s;
+        color: rgba(25, 25, 25, 0.4);
+    }
+
+    &:hover {
+        svg {
+            color: #ff7d00;
+        }
+    }
+
+    img {
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translate(0, -50%);
+        object-fit: cover;
+    }
+}
+
+.contact-by-alphabet-wrapper {
+    width: 100%;
+    position: relative;
+    background: #f3f3f3;
+
+    .contact-alphabet {
+        margin: 8px 16px;
+        color: rgba(25, 25, 25, 0.4);
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .contact-name-wrapper {
+        background: #ffffff;
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            max-width: calc(100% - 46px);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .user-avatar-wrapper {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            margin: 11px 10px 0 16px;
+            color: #ffffff;
+            background: #aff2c0;
+            line-height: 52px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .contact-name {
+            border-bottom: solid 1px #dcdcdc;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: calc(100% - 78px);
+            display: inline-block;
+            vertical-align: top;
+            padding: 26px 0;
+
+            b {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            &:hover {
+                color: #ff7d00;
+            }
+        }
+
+        &:nth-last-child(1) {
+            .contact-name {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.on-search-new-chat-view-wrapper {
+    max-height: calc(100vh - 161px);
+    height: calc(100vh - 161px);
+    overflow:auto;
+    width: 100%;
+    position: relative;
+    background: #f3f3f3;
+
+    .contact-alphabet {
+        margin: 10px 30px;
+        color: rgba(25, 25, 25, 0.4);
+        font-size: 16px;
+        letter-spacing: -0.5px;
+    }
+
+    .contact-name-wrapper {
+        background: #ffffff;
+        cursor: pointer;
+
+        .search-avatar-wrapper {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            margin: 11px 10px 0 16px;
+            text-align: center;
+            font-size: 20px;
+            color: #ffffff;
+            line-height: 52px;
+            display: inline-block;
+        }
+
+        img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .contact-name {
+            border-bottom: solid 1px #dcdcdc;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: calc(100% - 78px);
+            display: inline-block;
+            vertical-align: top;
+            padding: 16px 0;
+
+            p {
+                margin: 0;
+                max-width: calc(100% - 46px);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .contact-username {
+                color: #ff7d00;
+                font-size: 14px;
+                letter-spacing: -0.2px;
+                max-width: calc(100% - 46px);
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            b {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                padding-right: 16px;
+            }
+
+            &:hover {
+                b {
+                    color: #ff7d00;
+                }
+            }
+        }
+
+        &:nth-last-child(1) {
+            .contact-name {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .user-not-found {
+        text-align: center;
+        padding-top: 30px;
+
+        span {
+            color: #191919;
+            font-size: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        p {
+            margin: 8px 0 15px;
+            font-size: 20px;
+            letter-spacing: -0.6px;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 1024px) {
+            max-height: calc(100vh - 117px);
+            height: calc(100vh - 117px);
+    }
+}

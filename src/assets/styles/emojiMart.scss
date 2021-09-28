@@ -1,0 +1,71 @@
+.emoji-mart {
+    font-family: PTRootUI !important;
+    // transition: opacity .2s;
+    // opacity: 0;
+    // visibility: hidden;
+    
+    .emoji-mart-scroll {
+        margin-top: 4px;
+    }
+
+    .emoji-mart-search input {
+        transition: ease-in-out .1s;
+        font-size: 14px;
+
+        &:focus {
+            border: solid 1px #ff7e00;
+        }
+    }
+
+    .emoji-mart-search-icon {
+        top: 4px;
+        line-height: 1;
+
+        svg {
+            top: -2px !important;
+            right: unset !important;
+            position: relative !important;
+        }
+    }
+
+    .emoji-mart-emoji {
+        span {
+            cursor: pointer !important;
+        }   
+    }
+
+    button[disabled] {
+        color: unset !important;
+        border: unset !important;
+        background: unset !important;
+        cursor: default;
+        box-shadow: unset !important;
+    }
+
+    .emoji-mart-preview {
+        display: none;
+    }
+
+    .emoji-mart-bar {
+        .emoji-mart-anchor-icon {
+            svg {
+                position: relative;
+                top: unset;
+                right: unset;
+            }
+        }
+    
+        .emoji-mart-anchor-bar {
+            background-color: #ff7e00 !important;
+        }
+    }
+
+    .emoji-mart-category-label {
+        font-size: 14px;
+    }
+
+    &:hover {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}

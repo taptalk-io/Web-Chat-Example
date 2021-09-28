@@ -1,0 +1,48 @@
+.room-list-connection-bar-container {
+    height: 26px;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    line-height: 26px;
+    transition: ease-in-out 0.3s;
+  }
+  .room-list-connection-bar-container.status-connecting {
+    background: #ff7d00;
+  }
+  .room-list-connection-bar-container.status-waiting {
+    background: #9B9B9B;
+  }
+  .room-list-connection-bar-container.status-error {
+    background: #FF3F57;
+  }
+  .room-list-connection-bar-container.status-connected {
+    background: #19C600;
+  }
+  .room-list-connection-bar-container .lds-ring {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+  }
+  .room-list-connection-bar-container .lds-ring div {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    border-color: #ffffff transparent transparent transparent;
+  }
+  .room-list-connection-bar-container svg {
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+    font-size: 14px;
+    vertical-align: middle !important;
+  }
+  .room-list-connection-bar-container.active-connection-bar ~ .room-list-chat-container {
+    max-height: calc(100% - 78px);
+    overflow-y: auto;
+  }

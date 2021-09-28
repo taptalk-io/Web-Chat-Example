@@ -1,0 +1,97 @@
+.mention-list-wrapper {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 68px;
+    background: #ffffff;
+    max-height: 222px; //222;
+    overflow-y: auto;
+
+    &.bottom-136 {
+        bottom: 136px;
+    }
+
+    .mention-list-content {
+        position: relative;
+        padding: 8px 0 8px 70px;
+        cursor: pointer;
+
+        &.active-mention {
+            background: #ff7e00;
+            
+            .user-fullname {
+                color: #ffffff;
+            }
+
+            .user-username {
+                color: #ffffff;
+            }
+        }
+
+        .user-avatar-name {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border-radius: 50%;
+            line-height: 40px;
+            color: #ffffff;
+            left: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+            position: absolute;
+            text-align: center;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: -0.6px;
+            font-size: 14px;
+            letter-spacing: -0.4px;
+        }
+    
+        .user-avatar-image {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            left: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+            position: absolute;
+            cursor: pointer;
+            object-fit: cover;
+        }
+
+        .user-fullname {
+            color: #191919;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 14px;
+            letter-spacing: -0.4px;
+            line-height: 21px;
+            margin: 0;
+        }
+
+        .user-username {
+            color: #ff7e00;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 14px;
+            letter-spacing: -0.4px;
+            line-height: 21px;
+            margin: 0;
+        }
+
+        &:hover {
+            background: #ff7e00;
+            
+            .user-fullname {
+                color: #ffffff;
+            }
+
+            .user-username {
+                color: #ffffff;
+            }
+        }
+    }
+
+}

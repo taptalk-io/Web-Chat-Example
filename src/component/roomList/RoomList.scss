@@ -1,0 +1,17 @@
+.room-list-container {
+    position: relative;
+    width: 435px;
+    display: inline-block;
+    background: #F2F2F2;
+    // box-shadow: 1px 0px 0px 0px rgba(25, 25, 25, 0.1);
+    height: 100vh;
+    max-height: 100vh;
+    vertical-align: top;
+    z-index: 1;
+    box-shadow: 1px 0 #dcdcdc;
+    // border-right: solid 1px #dcdcdc;
+
+    @media screen and (min-width: 300px) and (max-width: 1024px) {
+        width: 100%;
+    }
+}

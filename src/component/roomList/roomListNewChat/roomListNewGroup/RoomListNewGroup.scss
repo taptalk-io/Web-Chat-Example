@@ -1,0 +1,48 @@
+.new-group-content {
+    transition: ease-in-out .3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    // right: -455px;
+    right: -100%;
+    
+    &.active-new-chat-view {
+        right: 0;
+    }
+
+    .contact-name {
+        // width: calc(100% - 125px) !important;
+        width: calc(100% - 78px) !important;
+
+        p {
+            max-width: calc(100% - 48px) !important;
+        }
+    }
+}
+
+.goback-new-chat {
+    font-size: 25px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+
+    &:hover {
+        color: #ff7d00;
+    }
+}
+
+.new-group-view {
+    // right: -455px;
+    right: -100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: ease-in-out .3s;
+
+    &.active-new-group-view {
+        right: 0;
+    }
+}

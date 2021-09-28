@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>icon / basic / check-mark / single</title>
+    <desc>Created with Sketch.</desc>
+    <g id="320-720px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="12.2-Group-Chat---Chat-room---Kicked" transform="translate(-278.000000, -378.000000)">
+            <g id="chat-bubble-/-send-link-/-with-preview-copy" transform="translate(64.000000, 269.000000)">
+                <g id="Group---chat-bubble">
+                    <g id="Group---time-stamp+status" transform="translate(185.000000, 109.000000)">
+                        <g id="icon-/-basic-/-check-mark-/-single" transform="translate(29.000000, 0.000000)">
+                            <g id="icon/basic/check-mark/single">
+                                <g>
+                                    <rect id="Base" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+                                    <polygon id="icon" fill="#FFFFFF" fill-rule="nonzero" points="6.47140452 9.52859548 12.6666667 3.33333333 13.6094757 4.27614237 6.47140452 11.4142136 2.66666667 7.60947571 3.60947571 6.66666667"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,133 @@
+.new-group-subject {
+    height: calc(100vh - 40px);
+    background: #F3F3F3;
+    position: relative;
+
+    .new-group-member-list-wrapper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .lds-ring {
+        top: 2px;
+    }
+}
+
+.new-group-subject-header {
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    border: solid 1px #dcdcdc;
+    background: #ffffff;
+    padding-top: 265px;
+    position: absolute;
+    left: -15px;
+    top: -250px;
+
+    .goback-new-chat {
+        top: 266px;
+        left: 26px;
+    }
+
+    .group-subject-avatar-wrapper {
+        width: 100%;
+        padding-top: 38px;
+
+        .group-subject-avatar {
+            width: 45%;
+            display:inline-block;
+            text-align: right;
+            position: relative;
+            vertical-align: top;
+            cursor: pointer;
+
+            .group-subject-avatar-wrapper {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: #ff7d00;
+                display: inline-block;
+                position: relative;
+
+                .icon-remove-wrapper {
+                    background: #ffffff;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: inline-block;
+                    z-index: 1;
+
+                    .icon-remove {
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: unset;
+                        z-index: 1;
+                        transform: unset;
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    cursor: pointer;
+
+                    &.avatar-image-subject {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                    }
+
+                    &.avatar-camera {
+                        width: 80% !important;
+                    }
+                }
+
+                input {
+                    display: none;
+                }
+            }  
+        }
+
+        .avatar-label {
+            width: 55%;
+            display:inline-block;
+            text-align: left;
+            vertical-align: top;
+            padding: 16px 0 0 15px;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 1023px) {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.group-subject-name {
+    padding: 225px 26px 0;
+
+    label {
+        color: rgb(25, 25, 25);
+        font-size: 14px;
+        letter-spacing: -0.4px;
+        line-height: 21px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: -0.3px;
+        border-radius: 8px;
+        padding: 14px 16px;
+        margin-top: 10px;
+    }
+}

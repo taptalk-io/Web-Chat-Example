@@ -1,0 +1,73 @@
+.chat-room-new-contact-wrapper {
+    position: relative;
+    width: calc(100% + 48px);
+    background: #ffffff;
+    border-bottom: solid 1px #dcdcdc;
+    border-top: solid 1px #dcdcdc;
+    margin-left: -24px;
+    transition: ease-in-out .3s;
+    height: 0;
+    overflow: hidden;
+
+    &.active-new-contact {
+        height: 46px;
+    }
+
+    .new-contact-action-wrapper {
+        width: calc(50% - 25px);
+        display: inline-block;
+        text-align: center;
+
+        &.block-user {
+            color: #ff3f57;
+        }
+
+        &.add-contact {
+            color: #ff7d00;
+            padding: 12px 0;
+        }
+
+        p {
+            margin: 0;
+            transition: ease-in-out .3s;
+
+            b {
+                cursor: pointer;
+            }
+
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    .new-contact-close-wrapper {
+        width: 50px;
+        display: inline-block;
+
+        div {
+            border-radius: 50%;
+            border: solid 1px #ff7d00;
+            width: 22px;
+            height: 22px;
+            position: relative;
+            display: inline-block;
+            top: 5px;
+            transition: ease-in-out .3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(0.95);
+            }
+
+            svg {
+                color: #ff7d00;
+                font-size: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

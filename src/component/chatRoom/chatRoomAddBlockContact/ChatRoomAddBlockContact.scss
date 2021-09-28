@@ -1,0 +1,72 @@
+.add-to-contact-wrapper {
+    width: 100%;
+    top: 52px;
+    left: 0;
+    position: absolute;
+    border: solid 1px #dcdcdc;
+    border-right: none;
+    background: #ffffff;
+    z-index: 1;
+
+    .add-to-contact-button {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        cursor: pointer;
+        
+        &.block-user {
+            border-right: solid 1px #dcdcdc;
+            color: rgba(255, 63, 87, 1);
+        }
+
+        &.add-to-contacts {
+            color: #ff7d00;
+        }
+
+        &:hover {
+            background: #f9f9f9;
+        }
+    }
+
+    .close-add-to-contact {
+        position: absolute;
+        right: 22px;
+        font-size: 14px;
+        top: 50%;
+        transform: translate(0, -50%);
+        color: #ff7d00;
+        border-radius: 50%;
+        border: solid 2px #ff7d00;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        transition: ease-in-out .1s;
+
+
+        svg {
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            transform: scale(.95) translate(0, -50%);
+        }
+    }
+
+    .lds-ring {
+        div {
+            border-color: #ff7d00 transparent transparent transparent;
+        }
+
+        margin-right: 4px;
+        position: relative;
+        top: 3px;
+    }
+}
